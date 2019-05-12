@@ -1,0 +1,7 @@
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\obj\Debug\FileManager.csprojAssemblyReference.cache
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\obj\Debug\FileManager.csproj.CoreCompileInputs.cache
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\bin\Debug\FileManager.exe.config
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\bin\Debug\FileManager.exe
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\bin\Debug\FileManager.pdb
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\obj\Debug\FileManager.exe
+D:\VisualStudio_Projects\CourseHackerU\FileManager\FileManager\obj\Debug\FileManager.pdb
