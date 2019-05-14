@@ -52,3 +52,14 @@ from Courses)
 )
 
 Answer 3
+update Info 
+set Students_ID_Max_Enroll_Count = 
+(
+SELECT MAX(b.Counter)
+FROM (
+select Student_ID, Count(*) As Counter 
+from Grades group by Student_ID
+) b
+)
+
+Answer 4
