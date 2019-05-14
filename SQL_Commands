@@ -63,3 +63,18 @@ from Grades group by Student_ID
 )
 
 Answer 4
+SELECT MAX(b.Student_ID)
+FROM
+(
+SELECT G.Student_ID, G.Grades, b.Course_ID, b.MaxGradeInCourse
+FROM Grades G
+INNER JOIN (
+select Course_ID, MAX(Grades) As MaxGradeInCourse
+from Grades 
+GROUP by Course_ID
+) b
+ON b.Course_ID = G.Course_ID
+WHERE G.Grades = b.MaxGradeInCourse
+) b
+
+Answer 5
