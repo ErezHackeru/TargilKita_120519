@@ -63,6 +63,9 @@ from Grades group by Student_ID
 )
 
 Answer 4
+Update Info
+Set Students_ID_Max_Higest_Count = 
+(
 SELECT MAX(b.Student_ID)
 FROM
 (
@@ -76,5 +79,6 @@ GROUP by Course_ID
 ON b.Course_ID = G.Course_ID
 WHERE G.Grades = b.MaxGradeInCourse
 ) b
+)
 
 Answer 5
