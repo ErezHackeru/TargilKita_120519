@@ -28,3 +28,16 @@ from Grades group by Course_Id
 )b 
 where b.COURSE_ID = Courses.ID
 
+Answer Info Table
+Answer 1
+update Info 
+set Course_ID_With_Max_Students = 
+(
+select ID
+from Courses 
+WHERE Num_Of_Students = 
+(select Max(Num_Of_Students)
+from Courses)
+)
+
+Answer 2
