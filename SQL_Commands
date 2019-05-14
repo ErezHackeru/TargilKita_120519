@@ -41,3 +41,14 @@ from Courses)
 )
 
 Answer 2
+update Info 
+set Course_ID_With_Max_Avg = 
+(
+select ID
+from Courses 
+WHERE Avg_Grade = 
+(select Max(Avg_Grade)
+from Courses)
+)
+
+Answer 3
