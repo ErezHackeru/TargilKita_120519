@@ -82,7 +82,15 @@ WHERE G.Grades = b.MaxGradeInCourse
 )
 
 Answer 5
-SELECT S.Last_Name
-FROM Students S
-INNER JOIN Info ON Info.ID = 1
-WHERE S.ID = Info.Students_ID_Max_Enroll_Count
+UPdate Info
+SET Student_Last_Name_With_Max_Count =
+(
+Select MAX(b.Last_Name)
+FROM
+(
+select S.ID, S.First_Name, S.Last_name, G.Student_ID 
+from Students S
+INNER JOIN Grades G
+ON S.ID = G.Student_ID
+) b
+)
