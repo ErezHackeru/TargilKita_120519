@@ -94,3 +94,13 @@ INNER JOIN Grades G
 ON S.ID = G.Student_ID
 ) b
 )
+
+
+Stored Procedure:
+CREATE PROCEDURE SELECT_ALL_LASTNAMEs_FROM_COURSE_ID @id int
+AS
+select S.Last_name, Count(G.Course_ID) AS CourseIDCounter
+from Students S
+INNER JOIN Grades G ON S.ID = G.Student_ID
+WHERE Course_ID = @id
+GROUP BY Last_Name
